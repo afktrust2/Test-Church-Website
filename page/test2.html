@@ -12,15 +12,34 @@
       <h1>Hello</h1>
     </header>
     <div class="wrapper">
-      <div id="navbar">
+      <div class="desktop">
+        <div id="navbar">
+            <a class="logo" href="Main.html"><img id="blah" src="css/imageedit-7-6600255187.png" alt="a"></a>
+            <a class="btn" href="test2.html"">Resources</a>
+            <a class="btn" href="test2.html"">Leadership</a>
+            <a class="btn" href="test2.html"">About</a>
+            <a class="btn" href="test2.html"">Jobs</a>
+            <a class="btn" href="test2.html">Connect</a>
+            <a class="btn" href="test1.html">Teaching</a>
+            <a class="btn" href="Main.html">Worship</a>
+        </div>
+      </div>
+      <div class="mobile">
+        <div id="navbar">
           <a class="logo" href="Main.html"><img id="blah" src="css/imageedit-7-6600255187.png" alt="a"></a>
-          <a class="btn" href="test2.html"">Resources</a>
-          <a class="btn" href="test2.html"">Leadership</a>
-          <a class="btn" href="test2.html"">About</a>
-          <a class="btn" href="test2.html"">Jobs</a>
-          <a class="btn" href="test2.html">Connect</a>
-          <a class="btn" href="test1.html">Teaching</a>
-          <a class="btn active" href="Main.html">Worship</a>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a class="btn" href="Main.html">Worship</a>
+              <a class="btn" href="test1.html">Teaching</a>
+              <a class="btn" href="test2.html">Connect</a>
+              <a class="btn" href="test2.html">Jobs</a>
+              <a class="btn" href="test2.html">About</a>
+              <a class="btn" href="test2.html">Leadership</a>
+              <a class="btn" href="test2.html">Resources</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="container">
         <div id="item1"><h2>OOPS, this page does not exist yet!
@@ -39,6 +58,24 @@
         © COPYRIGHT 2017. ALL RIGHTS RESERVED.
       </p>
     </div></footer>
-    <script type="js/script.js"></script>
+    <script>
+    function myFunction(){
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var d = 0; d < dropdowns.length; d++) {
+          var openDropdown = dropdowns[d];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    </script>
   </body>
 </html>

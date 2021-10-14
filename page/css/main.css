@@ -1,161 +1,349 @@
-header{
-  height: 200px;
-  background-image: url(https://www.publicdomainpictures.net/pictures/80000/velka/kitty-cat-1395206763uwr.jpg);
-  background-color: #5F9EA0;
-  margin-bottom: 20px;
-  top: 0;
+@media (max-width:700px) {
+
+  .desktop {
+        display: none;
+      }
+      /* Dropdown Button */
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  header{
+    height: 200px;
+    width: 375px;
+    background-image: url(https://www.publicdomainpictures.net/pictures/80000/velka/kitty-cat-1395206763uwr.jpg);
+    background-color: #5F9EA0;
+    margin-bottom: 20px;
+  }
+
+  body{
+    margin: 0px;
+    width: auto;
+    background-color: #fff4f2;
+  }
+
+  h1{
+    margin: 75px;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color: Green
+  }
+
+  h2{
+    color: black
+  }
+
+  footer {
+    background-color: lightgrey
+  }
+
+  p{
+    margin: 2px;
+    font-size: 5vw;
+  }
+
+  .wrapper{
+    line-height: 1.5;
+  }
+
+  .title{
+    font-size: 48px;
+    color: darkred;
+
+  }
+
+
+  .btn {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a.logo{
+    float: right;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    width: 65px;
+    height: 60px;
+  }
+
+  .container{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "main1"
+    "main2"
+    "main3"
+    "main4";
+    margin: auto;
+    grid-gap: 10px;
+    justify-content: center;
+
+  }
+
+  .box{
+    font: 5vw;
+    width: auto;
+    height: auto;
+    border: 5px solid lightgrey;
+  }
+
+  #navbar {
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+  }
+
+  #blah{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #item1{
+    color: grey;
+    font-size: 1.8vw;
+    grid-area: main1;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+
+  }
+
+  #item2{
+    grid-area: main2;
+    margin: auto;
+  }
+
+  #item3{
+    grid-area: main3;
+    margin: auto;
+  }
+
+  #item4{
+    color: grey;
+    font-size: 1.7vw;
+    grid-area: main4;
+    width: 80%;
+    margin: auto;
+  }
+
+  #copyright{
+    font-size: 10px;
+  }
+
+  #footer{
+    text-align: right;
+    width: auto;
+    height: auto;
+    padding: 40px;
+  }
 }
 
-body{
-  margin: 0px;
-  background-color: #fff4f2;
-}
+@media (min-width:701px){
+  .mobile {
+      display: none;
+  }
 
-h1{
-  margin: 75px;
-  font-weight: bold;
-  font-size: 80px;
-  text-align: center;
-  color: Green
-}
+  header{
+    height: 200px;
+    background-image: url(https://www.publicdomainpictures.net/pictures/80000/velka/kitty-cat-1395206763uwr.jpg);
+    background-color: #5F9EA0;
+    margin-bottom: 20px;
+    top: 0;
+  }
 
-h2{
-  color: black
-}
+  body{
+    margin: 0px;
+    background-color: #fff4f2;
+  }
 
-footer {
-  background-color: lightgrey
-}
+  h1{
+    margin: 75px;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color: Green
+  }
 
-p{
-  margin: 2px;
-}
+  h2{
+    color: black
+  }
 
-.wrapper{
-  line-height: 1.5;
-}
+  footer {
+    background-color: lightgrey
+  }
 
-.title{
-  font-size: 48px;
-  color: darkred;
+  p{
+    margin: 2px;
+  }
 
-}
+  .wrapper{
+    line-height: 1.5;
+  }
 
-#navbar {
-  background-color: #f2f2f2;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+  .title{
+    font-size: 48px;
+    color: darkred;
 
-.btn {
-  float: right;
-  color: #333;
-  text-align: center;
-  padding: 10px 10px;
-  margin: 20px 20px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  }
 
-#navbar a.logo{
-  float: right;
-  position: fixed;
-  top: 0;
-  padding: 5px;
-  width: 65px;
-  height: 60px;
-}
+  #navbar {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-.btn:hover {
-  color: grey;
-}
+  .btn {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
-/* Add a color to the active/current link */
-.active {
-  border: 2px solid black;
-}
+  #navbar a.logo{
+    float: right;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    width: 65px;
+    height: 60px;
+  }
 
-/* .navformat{
-  display: inline;
-  float: right;
-  flex: 1;
-} */
+  .btn:hover {
+    color: grey;
+  }
 
-.container{
-  display: grid;
-  width: 100%;
-  grid-template-areas:
-  "main1"
-  "main2"
-  "main3"
-  "main4";
-  margin: auto;
-  grid-gap: 10px;
-  justify-content: center;
+  /* Add a color to the active/current link */
+  .active {
+    border: 2px solid black;
+  }
 
-}
+  .container{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "main1"
+    "main2"
+    "main3"
+    "main4";
+    margin: auto;
+    grid-gap: 10px;
+    justify-content: center;
 
-.box{
-  width: auto;
-  height: auto;
-  border: 5px solid lightgrey;
-}
+  }
 
-.summary{
-  font-style: italic;
-}
+  .box{
+    width: auto;
+    height: auto;
+    border: 5px solid lightgrey;
+  }
 
-.pic{
-  max-width: 100%;
-  height: auto;
-}
+  .summary{
+    font-style: italic;
+  }
 
-.readmore{
-  font-size: 5vw;
-}
+  .pic{
+    max-width: 100%;
+    height: auto;
+  }
 
-#blah{
-  max-width: 100%;
-  max-height: 100%;
-}
+  .readmore{
+    font-size: 5vw;
+  }
 
-#item1{
-  color: grey;
-  font-size: 1.8vw;
-  grid-area: main1;
-  text-align: center;
-  width: 50%;
-  margin: auto;
+  #blah{
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-}
+  #item1{
+    color: grey;
+    font-size: 1.8vw;
+    grid-area: main1;
+    text-align: center;
+    width: 50%;
+    margin: auto;
 
-#item2{
-  grid-area: main2;
-  margin: auto;
-}
+  }
 
-#item3{
-  grid-area: main3;
-  margin: auto;
-}
+  #item2{
+    grid-area: main2;
+    margin: auto;
+  }
 
-#item4{
-  color: grey;
-  font-size: 1.7vw;
-  grid-area: main4;
-  width: 80%;
-  margin: auto;
-}
+  #item3{
+    grid-area: main3;
+    margin: auto;
+  }
 
-#copyright{
-  font-size: 10px;
-}
+  #item4{
+    color: grey;
+    font-size: 1.7vw;
+    grid-area: main4;
+    width: 80%;
+    margin: auto;
+  }
 
-#footer{
-  text-align: right;
-  width: auto;
-  height: auto;
-  padding: 40px
+  #copyright{
+    font-size: 10px;
+  }
+
+  #footer{
+    text-align: right;
+    width: auto;
+    height: auto;
+    padding: 40px
+  }
 }
